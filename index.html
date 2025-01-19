@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="pl">
-<link rel="stylesheet" href="style.css">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja strona</title>
+    <title>Grafik Pracowników Kina</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<script src="script.js"></script>
-    <h1>Witaj na mojej stronie!</h1>
-    <p>To jest moja pierwsza strona internetowa.</p>
+<body>
+
+    <!-- Nagłówek -->
+    <header>
+        <h1>Grafik Pracowników Kina</h1>
+        <p>Witaj! Proszę się zalogować, aby wprowadzić swoje dyspozycje.</p>
+    </header>
+
+    <!-- Formularz logowania -->
+    <section class="login-form">
+        <h2>Login</h2>
+        <form action="#" method="post" id="loginForm">
+            <label for="login">Login:</label>
+            <input type="text" id="login" name="login" required placeholder="np. manakowalska">
+            <br>
+            <label for="password">Hasło:</label>
+            <input type="password" id="password" name="password" required placeholder="Hasło">
+            <br>
+            <button type="submit">Zaloguj się</button>
+        </form>
+    </section>
+
+    <!-- Formularz dyspozycji -->
+    <section class="schedule-form">
+        <h2>Wprowadź Dyspozycje</h2>
+        <form action="#" method="post" id="scheduleForm" style="display:none;">
+            <label for="wednesday">Środa:</label>
+            <input type="text" id="wednesday" name="wednesday" placeholder="np. 12:00 - 18:00">
+            <br>
+            <label for="thursday">Czwartek:</label>
+            <input type="text" id="thursday" name="thursday" placeholder="np. 12:00 - 18:00">
+            <br>
+            <label for="friday">Piątek:</label>
+            <input type="text" id="friday" name="friday" placeholder="np. 12:00 - 18:00">
+            <br>
+            <label for="saturday">Sobota:</label>
+            <input type="text" id="saturday" name="saturday" placeholder="np. 12:00 - 18:00">
+            <br>
+            <button type="submit">Zapisz Dyspozycje</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
